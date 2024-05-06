@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexagon</title>
+    <link rel="stylesheet" href="nav.css">
+    <link href="search.css" rel="stylesheet">
+    <link rel="stylesheet" href="Services.css">
+</head>
+<body>
+  <!-- Navigation Section-->
+  
+  <div class="navbar">
+    <img src="heXAGON.png" alt="Company Logo" class="logo">
+    <div class="company-name">Hexagon</div>
+    <div class="search-container">
+      <form action="/search" method="GET">
+        <input type="text" placeholder="Search..." name="search">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+    <div class="menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+      &#9776;
+    </a>
+  </div>
+  
+  <!-- Search Section-->
+  
+  <div class="search-div">
+		<div class="search-text">
+			<h1 class="search-heading">Events Elevated, Moments Magnified</h1>
+			<p class="search-para">Find the best event vendors with thousand
+				of trusted reviews</p>
+			<div class="search-bar">
+				<div class="search-dropdowns">
+					<select class="search-drop">
+						<option selected hidden>Select type</option>
+						<option>Wedding Photographers</option>
+						<option>Bridal Makeup Artists</option>
+						<option>Wedding Venues</option>
+						<option>DJ</option>
+						<option>Entertainment</option>
+					</select>
+				</div>
+				<div class="search-dropdowns">
+					<select class="search-drop">
+						<option selected hidden>Select City</option>
+						<option>Bengaluru</option>
+						<option>Mumbai</option>
+						<option>Pune</option>
+						<option>Hyderabad</option>
+						<option>Chennai</option>
+					</select>
+				</div>
+				<div class="search-dropdowns">
+					<button class="search-button">Get Started</button>
+				</div>
+			</div>
+			<div class="search-links">
+				<p class="search-link-name">Popular Searches:</p>
+				<a href="" class="search-link">Wedding Photographers</a>
+				<p class="search-link-sep">|</p>
+				<a href="" class="search-link">Bridal Makeup Artists</a>
+				<p class="search-link-sep">|</p>
+				<a href="" class="search-link">Wedding Cards</a>
+				<p class="search-link-sep">|</p>
+				<a href="" class="search-link">Wedding Venues</a>
+			</div>
+		</div>
+	</div>
+
+  <!-- Service Section-->
+
+<div class="Service-main-div">
+  <h1 id="servicestitle">Our Services</h1>
+  <div class="circles">
+      
+      <div class="circledivs">
+          <a href="#"><button class="circle1"></button></a>   <br>
+          <label for="circle1" class="caption" id="partylabel">Parties</label>
+      </div>
+
+      <div class="circledivs">
+          <a href="#"><button class="circle2"></button></a>   <br>
+          <label for="circle2" class="caption" id="weddinglabel">Weddings</label>
+      </div>
+
+      <div class="circledivs">
+          <a href="#"><button class="circle3"></button></a>   <br>
+          <label for="circle3" class="caption" id="corporatelabel">Corporate Events</label>
+      </div>
+
+      <div class="circledivs">
+          <a href="#"><button class="circle4"></button></a>   <br>
+          <label for="circle4" class="caption" id="workshoplabel">Workshops</label>
+      </div>
+
+      <div class="circledivs">
+          <a href="#"><button class="circle5"></button></a>   <br>
+          <label for="circle5" class="caption" id="ceremonieslabel">Ceremonies</label>
+      </div>
+
+      <div class="circledivs">
+          <a href="#"><button class="circle6"></button></a>   <br>
+          <label for="circle6" class="caption" id="sportlabel">Sport Events</label>
+      </div>
+  </div>
+</div>
+  
+  <!-- Footer Section -->
+  
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: info@example.com</p>
+        <p>Phone: +1234567890</p>
+        <p>Address: 123 Street, City, Country</p>
+      </div>
+      <div class="footer-section">
+        <h3>Popular Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Company Info</h3>
+        <p>About Us: Brief description of the company.</p>
+        <p>Our Mission: What the company aims to achieve.</p>
+        <p>Privacy Policy | Terms of Service</p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#" class="social-icon"><img src="facebook.png" alt="Facebook"></a>
+          <a href="#" class="social-icon"><img src="x.png" alt="Twitter"></a>
+          <a href="#" class="social-icon"><img src="whatsapp.jpg" alt="LinkedIn"></a>
+          <a href="#" class="social-icon"><img src="insta.jpg" alt="Instagram"></a>
+          <a href="#" class="social-icon"><img src="linkedin.png" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Hexagon Events. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script>
+  function toggleMenu() {
+    var menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+  }
+  </script>
+</body>
+</html>

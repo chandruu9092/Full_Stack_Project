@@ -1,0 +1,220 @@
+body{
+  margin: 0px;
+  padding: auto;
+}
+/* Styles for navbar */
+.navbar {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed; /* Fix the navbar at the top */
+  top: 0; /* Ensure navbar sticks at the top */
+  width: 100%; /* Occupy full width */
+  z-index: 1000; /* Ensure the navbar stays above other content */
+}
+
+.navbar .logo {
+  height: 50px;
+  width: max-content;
+}
+
+.company-name {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 7px;
+}
+
+
+.menu {
+  display: flex;
+  margin-right: 30px;
+  justify-content: space-around;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.menu a:hover {
+  background-color: #555;
+}
+
+.icon {
+  display: none;
+  color: white;
+  
+}
+
+/* Styles for search bar */
+.search-container {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.search-container form {
+  display: inline-block;
+}
+
+.search-container input[type=text] {
+  padding: 10px;
+  margin: 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #45a049;
+}
+
+.content {
+  padding-top: 70px; /* Adjust according to the height of your fixed navbar */
+}
+
+/* Styles for footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-bottom: 100px;
+}
+
+.footer-section {
+  width: 100%;
+  max-width: 300px;
+}
+
+.footer-section h3 {
+  color: #fff;
+}
+
+.footer-section p {
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-icon {
+  margin-right: 10px;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    z-index: 1001;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu a {
+    padding: 15px 20px;
+    border-bottom: 1px solid #777;
+  }
+
+  .icon {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .search-container {
+    display: none;
+  }
+  
+  .company-name {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the text */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 888px){
+  .search-container {
+    display: none;
+  }
+  
+}
+
+@media screen and (min-width: 720px) {
+  .footer-section {
+    width: 50%;
+  }
+  
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-section {
+    width: 25%;
+  }
+}

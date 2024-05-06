@@ -1,0 +1,184 @@
+.Service-main-div{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+    background-color: #F5DAD2;
+    padding-top: 10px;
+}
+
+/* Used for flex [2 flexboxes]*/
+.circles{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Div containing a choice and its label [total 6]*/
+.circledivs{
+    height: 200px;
+    width: 200px;  
+    margin-top: 20px; 
+    margin: 40px;
+    padding: 20px;
+    align-content: center;
+    text-align: center;
+}
+
+/* Common for all services [circle buttons]*/
+.circle1,.circle2,.circle3,.circle4,.circle5,.circle6{
+    height: 200px;
+    width: 200px; 
+    border-radius: 50%;
+    border: 5px white solid;
+}
+
+.circle1:hover,.circle2:hover,.circle3:hover,.circle4:hover,.circle5:hover,.circle6:hover{
+    transform: scale(1.08);
+    transition-timing-function: ease-out;
+    transition-duration: 2s;
+ }
+
+ /* individual button 1 */
+.circle1 {
+    background-image: url(party.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+/* individual button 2 */
+.circle2{
+    background-image: url(wedding.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* individual button 3 */
+.circle3{
+    background-image: url(corporate.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* individual button 4 */
+.circle4{
+    background-image: url(workshop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* individual button 5 */
+.circle5{
+    background-image: url(ceremonies.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* individual button 6 */
+.circle6{
+    background-image: url(sports.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Heading */
+#servicestitle{
+   font-family: Brush Script MT, Brush Script Std, cursive;
+   font-size: 50px;
+   font-weight: lighter;
+   text-align: left;
+   margin-bottom: 30px;
+   margin-left: 30px;
+   color: rgb(123, 44, 44);
+}
+
+/* Label text */
+.caption{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 30px;
+    shape-outside: circle(50%);
+    color: rgb(123, 44, 44);
+}
+
+
+/* responsive  for tablet */
+@media only screen and (min-width: 728px) and (max-width: 1024){
+    .circles{
+        margin-left: 0px;
+        display:flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+    /* Div containing a choice and its label [total 6]*/
+    .circledivs{
+        height: 250px;
+        width: 250px;  
+        margin-top: 20px; 
+        margin: 40px;
+        padding: 20px;
+        align-content: center;
+        text-align: center;
+    }
+
+    /* Common for all services [circle buttons]*/
+    .circle1,.circle2,.circle3,.circle4,.circle5,.circle6{
+        height: 250px;
+        width: 250px; 
+    
+    }
+
+    #servicestitle{
+        font-size: 50px;
+        text-align: center;
+
+   }
+   .caption{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 38px;
+}
+}
+
+
+/* responsive  for laptop */
+@media only screen and (min-width: 1024px){
+    .circles{
+        margin-left: 0px;
+        display:flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    
+    /* Div containing a choice and its label [total 6]*/
+    .circledivs{
+        height: 300px;
+        width: 300px;  
+        margin-top: 20px; 
+        margin: 40px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Common for all services [circle buttons]*/
+    .circle1,.circle2,.circle3,.circle4,.circle5,.circle6{
+        height: 300px;
+        width: 300px; 
+    }
+    }
+
+    #servicestitle{
+        font-size: 50px;
+        text-align: center;
+
+   }
+   .caption{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 38px;
+}
+}
+
+
