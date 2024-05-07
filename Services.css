@@ -1,24 +1,24 @@
-.Service-main-div{
+*{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     border: border-box;
     background-color: #F5DAD2;
-    padding-top: 10px;
 }
 
-/* Used for flex [2 flexboxes]*/
+/* Used for flex */
 .circles{
     display:flex;
     justify-content: space-evenly;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-left: 25%;
     text-align: center;
 }
 
 /* Div containing a choice and its label [total 6]*/
 .circledivs{
-    height: 200px;
-    width: 200px;  
+    height: 250px;
+    width: 250px;
     margin-top: 20px; 
     margin: 40px;
     padding: 20px;
@@ -28,8 +28,8 @@
 
 /* Common for all services [circle buttons]*/
 .circle1,.circle2,.circle3,.circle4,.circle5,.circle6{
-    height: 200px;
-    width: 200px; 
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
     border: 5px white solid;
 }
@@ -37,7 +37,7 @@
 .circle1:hover,.circle2:hover,.circle3:hover,.circle4:hover,.circle5:hover,.circle6:hover{
     transform: scale(1.08);
     transition-timing-function: ease-out;
-    transition-duration: 2s;
+    transition-duration: 1.5s;
  }
 
  /* individual button 1 */
@@ -88,6 +88,8 @@
    font-weight: lighter;
    text-align: left;
    margin-bottom: 30px;
+   text-align: center;
+
    margin-left: 30px;
    color: rgb(123, 44, 44);
 }
@@ -102,7 +104,7 @@
 
 
 /* responsive  for tablet */
-@media only screen and (min-width: 728px) and (max-width: 1024){
+@media only screen and (min-width: 728px){
     .circles{
         margin-left: 0px;
         display:flex;
@@ -112,7 +114,7 @@
         align-items: center;
         text-align: center;
     }
-    /* Div containing a choice and its label [total 6]*/
+    /* Div containing a choice and its label [total 6] */
     .circledivs{
         height: 250px;
         width: 250px;  
@@ -123,7 +125,7 @@
         text-align: center;
     }
 
-    /* Common for all services [circle buttons]*/
+    /* Common for all services [circle buttons] */
     .circle1,.circle2,.circle3,.circle4,.circle5,.circle6{
         height: 250px;
         width: 250px; 
@@ -142,18 +144,19 @@
 }
 
 
-/* responsive  for laptop */
+/* responsive  for laptop  */
 @media only screen and (min-width: 1024px){
     .circles{
         margin-left: 0px;
         display:flex;
+        position: absolute;
         justify-content: space-evenly;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
         text-align: center;
     
-    /* Div containing a choice and its label [total 6]*/
+    /* Div containing a choice and its label [total 6] */
     .circledivs{
         height: 300px;
         width: 300px;  
@@ -163,7 +166,7 @@
         text-align: center;
     }
 
-    /* Common for all services [circle buttons]*/
+    /* Common for all services [circle buttons] */
     .circle1,.circle2,.circle3,.circle4,.circle5,.circle6{
         height: 300px;
         width: 300px; 
@@ -180,5 +183,4 @@
     font-size: 38px;
 }
 }
-
 
