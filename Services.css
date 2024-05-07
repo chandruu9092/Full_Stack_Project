@@ -151,7 +151,7 @@
     .circles{
         margin-left: 0px;
         display:flex;
-        position: absolute;
+      /*  position: absolute;*/
         justify-content: space-evenly;
         flex-direction: row;
         flex-wrap: wrap;
