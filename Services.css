@@ -110,6 +110,7 @@
 @media only screen and (min-width: 728px){
     .circles{
         margin-left: 0px;
+        margin-right: 0px;
         display:flex;
         justify-content: space-evenly;
         flex-direction: row;
@@ -151,6 +152,7 @@
 @media only screen and (min-width: 1024px){
     .circles{
         margin-left: 0px;
+        margin-right: 0px;
         display:flex;
       /*  position: absolute;*/
         justify-content: space-evenly;
